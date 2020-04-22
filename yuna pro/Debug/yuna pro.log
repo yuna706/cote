@@ -1,2 +1,3 @@
-﻿  geami.cpp
-  yuna pro.vcxproj -> D:\31010\yuna pro\Debug\yuna pro.exe
+﻿  geami-99.cpp
+D:\31010\yuna pro\yuna pro\geami-99.cpp(12,1): error C4996:  'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1274): message :  'scanf' 선언을 참조하십시오.

@@ -24,7 +24,16 @@
     <ClCompile Include="16-2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="geami.cpp">
+    <ClCompile Include="geami-99.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sultang-98.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sip-97.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="teat.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
