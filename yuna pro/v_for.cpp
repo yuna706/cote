@@ -16,12 +16,14 @@ int main(){
 	for(vector<int>::size_type i = 0; i < v.size(); i++){
 		cout << v.at(i) << " ";
 	}
+	cout<<endl;
 	
 	//ex2) int i를 이용한 반복
 	cout << "[v.at(i)] int : ";
 	for(int i = 0; i < v.size(); i++){
 		cout << v.at(i) << " ";
 	}
+	cout<<endl;
 	
 	//ex3) 반복자 iterator를 이용한 반복
 	cout << "[*itet] iterator : ";
@@ -29,4 +31,5 @@ int main(){
 	for(iter = v.begin(); iter != v.end(); iter++){
 		cout << *iter << " ";
 	}
+	cout<<endl;
 }
