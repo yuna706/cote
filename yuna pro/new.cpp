@@ -1,11 +1,11 @@
 #include<iostream>
-#include<array>
 int main(){
 	int a = 6;
-	new int;
+	int * b = new int[5]{1,54,8,6};
 	
-	delete a;
 	
-	std::cout << a;
+	std::cout << a << " "<< b[2] << std::endl;
 	
+	delete b; // Áö¿öÁü 
+	std:: cout<< b[2];
 }
