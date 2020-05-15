@@ -2,6 +2,7 @@
 #include <vector>
 #include <iostream>
 
+//정수 n만큼 수, 박 의 패턴으로 진행되는 문자열을 출력하라. 
 using namespace std;
 
 string solution(int n) {

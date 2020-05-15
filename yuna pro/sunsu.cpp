@@ -5,6 +5,7 @@
 
 using namespace std;
 
+//완주하지 못한 선수의 이름을 출력하라 
 string solution(vector<string> participant, vector<string> completion) {
     
     sort(participant.begin(), participant.end());
