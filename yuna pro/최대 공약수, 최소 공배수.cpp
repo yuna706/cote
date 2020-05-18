@@ -16,5 +16,7 @@ int lcm(int a, int b){
 }
 
 int main(){
-	cout << gcd(3,12) << " " << lcm(3, 12);
+	int a = 6;
+	int b = 21;
+	cout << gcd(a, b) << " " << lcm(a, b);
 }
