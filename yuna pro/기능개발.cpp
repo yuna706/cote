@@ -1,27 +1,38 @@
-#include <string>
 #include <vector>
-#include <iostream>
 #include <algorithm>
+#include <queue>
+#include <iostream>
 
 using namespace std;
 
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
-    vector<int> answer;
+    queue<int> que;
+    queue<int> que2;
+    
+    for(auto a : progresses){
+        que.push(a);
+    }
+    for(auto a : speeds){
+        que2.push(a);
+    }
     
     vector<int> day;
     int d = 0;
-    while(!progresses.empty()){
-        int j = 0;
+    
+    while(!que.empty()){
         day.push_back(0);
         
-        for(int i = 0; i < progresses.size(); i++){
-            progresses[i] += speeds[i];
+        for(int i = 0; i < que.size(); i++){
+            if(que.front() >= 100)
+            que.front() += que2.front();
+            que.push(que.front()); que.pop();
+            que2.push(que2.front()); que2.pop();
         }
-        
-        while(progresses[0] >= 100){
+        if(que.empty()) break;
+        while(que.front() >= 100){
             day[d]++;
-            progresses.erase(progresses.begin());
-            speeds.erase(speeds.begin());
+            que.pop();
+            que2.pop();
         }
         d++;
     }

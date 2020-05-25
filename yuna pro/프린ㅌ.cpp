@@ -1,14 +1,15 @@
 #include <string>
 #include <vector>
 #include <queue>
+#include <iostream>
 
 using namespace std;
 
 int solution(vector<int> priorities, int location){
 	int answer = 0;
 	
-	queue<pair<int, int> > pue;
-	priority_queue<int> pue2;
+	queue<pair<int, int> > que;
+	priority_queue<int> que2;
 	
 	for(int i = 0; i < priorities.size(); i++){
 		que.push(make_pair(i, priorities[i])); // 자신의 칸 번호와 배열 원소 저장
@@ -37,5 +38,7 @@ int solution(vector<int> priorities, int location){
 }
 
 int main(){
-	vector<int>
+	vector<int> a{2,1,3,2};
+	
+	cout << solution(a, 2);
 }
